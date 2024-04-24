@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* 
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+} */
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+header img{
+    height: 120px;
+    border: 8px outset rgb(255, 252, 252);
+    width: auto;
+    position: relative;
+    border-radius: 100%;
+
+}
+.cname{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.services {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+footer {
+    background-color: black;
+    color: #ea5959;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+}
+footer p{
+    color: white;
+}

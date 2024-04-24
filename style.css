@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    /* background-color: #000000; */
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+header img{
+    height: 50px;
+    border: 8px outset rgb(255, 252, 252);
+    /* width: auto;
+    position: relative; */
+    border-radius: 100%;
+
+}
+
+header .logo {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.cname{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;    
+    padding: 10px 15px;
+    transition: all .3s ease-in-out;
+    position: relative
+}
+
+/* nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+} */
+
+nav ul li:hover {
+    background-color: #bb4e4e;
+    transform: translateY(-10px);
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('try.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content {
+    color: white;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .content h1 {
+    margin: 0px;
+    font-size: 40px;
+
+}
+
+.hero .content p {
+    margin: 0px;
+}
+
+.hero .content span{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:cornflowerblue;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+
+}
+
+.hero .content span:hover {
+    background-color: rgb(51, 214, 51);
+    transform: scale(1.2);
+    
+}
+
+/* 
+main {
+    padding: 500px;
+    background-image: url("picture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    filter: brightness(65%);
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+main img {
+    opacity: 0; Initially hide all images 
+    align-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.d-1{
+    animation-delay: 1s;
+}
+.d-2{
+    animation-delay: 2s;
+}
+
+.image {
+    position: relative;
+    animation: slideIn 1s forwards infinite, slideOut 6s forwards infinite;
+    height: 320px;width: auto;
+} */
+
+footer {
+    background-color: black;
+    color: #ea5959;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 25px;
+}
+footer p{
+    color: white;
+}
+
+/* .why{
+    font-size: 100px;
+   position:relative;
+   top: -500px;
+    right:300px;
+}
+*/ 
+
+.image {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.image:hover{
+
+    transform: scale(1.2);
+}
+
+main {
+
+    padding: 40px 0px;
+    padding-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+} 
+
+.container, main .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+main .content {
+    margin-top: 100px;
+}
+
+.card  img{
+
+    
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.text {
+    padding: 0px 20px;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+}
+
+

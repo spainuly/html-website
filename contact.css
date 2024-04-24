@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;   }
+
+header img{
+    height: 120px;
+    border: 8px outset rgb(255, 252, 252);
+    width: auto;
+    position: relative;
+    border-radius: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;    
+    margin-right: 10px;
+    width: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+main {
+    padding: 500px;
+    background-image: url("picture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+footer {
+    background-color: black;
+    color: #ea5959;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+}
+footer p{
+    color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label,
+form textarea,
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+.title{
+    position: relative;
+}
+.touch{
+    font-size: 2.494rem;
+    font-weight: 700;
+    line-height: 0.88em;
+    font-family: "Montserrat", sans-serif !important;
+}
